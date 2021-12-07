@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#0e6a74"
+        android:gravity="center"
+        android:text="New Appointment"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Title :"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="30dp"
+            android:layout_weight="70"
+            android:id="@+id/etAppointmentTitle"/>
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor Name"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spDoctor">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Care Center:"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spCareCenter"
+        >
+
+    </Spinner>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:minLines="3"
+        android:padding="5dp"
+        android:gravity="start"
+        android:id="@+id/etAppointmentAddress"
+        android:textColor="#000"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="Appointment Date"
+            android:textColor="#000"
+            android:textSize="18sp" />
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/etAppointmentDate"
+          android:layout_weight="70"
+         />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="Appointment Time"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etAppointmentTime"
+            android:layout_weight="70"
+            android:textColor="#000"
+            />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btAppointmentSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="50"
+        android:background="#0e6a74"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btAppointmentCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="50"
+        android:background="#ce6c2f"
+        android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>
